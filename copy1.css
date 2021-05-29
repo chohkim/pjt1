@@ -1,0 +1,97 @@
+body {
+    font-family: 'PT Serif', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style:normal;
+	font-weight:100;
+    /* body를 margin 0으로 두지 않으면, 그 다음 컨텐츠 사이에 공간이 생김 */
+    margin: 0;
+    padding:0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainpage {
+    background-color:rgb(36, 43, 39);
+    color: white;
+}
+
+.dc-content{
+    display: flex;
+    justify-content: space-around;  
+}
+
+
+.dc-header {
+    justify-content: center;
+    padding: 0px 10px;
+    font-size: large;
+    align-items: center;
+}
+.dc-header i{
+    font-size: 120%;
+    padding: 0px 5px;
+}   
+
+
+.dc-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+
+.dc-list li{
+    text-align: center;
+    padding: 5px 10px;
+    width: 500px;
+}
+
+.dc-item:hover{
+    color:rgb(172, 190, 172);
+    transition: 0.1s;
+}
+
+.dc-link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: large;  
+}
+
+.dc-link li{
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .dc-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .dc-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+
+    .dc-list li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .dc-link {
+        justify-content: center;
+        width:100%;
+    }
+}
